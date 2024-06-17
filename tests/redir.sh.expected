@@ -1,0 +1,12 @@
+start: State(name='start', start=0, end=0, depth=0)
+    start: State(name='statement', start=0, end=0, depth=1)
+        start: State(name='command', start=0, end=0, depth=2)
+            start: State(name='arg', start=0, end=0, depth=3)
+            end: State(name='arg', start=0, end=4, depth=3) => 'true'
+            start: State(name='arg', start=5, end=5, depth=3)
+            end: State(name='arg', start=5, end=6, depth=3) => '>'
+            start: State(name='arg', start=7, end=7, depth=3)
+            end: State(name='arg', start=7, end=8, depth=3) => 'x'
+        end: State(name='command', start=0, end=8, depth=2) => 'true > x'
+    end: State(name='statement', start=0, end=8, depth=1) => 'true > x'
+end: State(name='start', start=0, end=9, depth=0) => 'true > x\n'

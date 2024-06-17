@@ -1,0 +1,6 @@
+start: State(name='start', start=0, end=0, depth=0)
+    start: State(name='statement', start=0, end=0, depth=1)
+        start: State(name='comment', start=0, end=0, depth=2)
+        end: State(name='comment', start=0, end=19, depth=2) => '#!/usr/bin/env bash'
+    end: State(name='statement', start=0, end=19, depth=1) => '#!/usr/bin/env bash'
+end: State(name='start', start=0, end=20, depth=0) => '#!/usr/bin/env bash\n'

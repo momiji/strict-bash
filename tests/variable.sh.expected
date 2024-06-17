@@ -1,0 +1,270 @@
+start: State(name='start', start=0, end=0, depth=0)
+    start: State(name='statement', start=0, end=0, depth=1)
+        start: State(name='comment', start=0, end=0, depth=2)
+        end: State(name='comment', start=0, end=19, depth=2) => '#!/usr/bin/env bash'
+    end: State(name='statement', start=0, end=19, depth=1) => '#!/usr/bin/env bash'
+    start: State(name='statement', start=20, end=20, depth=1)
+        start: State(name='command', start=20, end=20, depth=2)
+            start: State(name='arg', start=20, end=20, depth=3)
+                start: State(name='$', start=20, end=20, depth=4)
+                end: State(name='$', start=20, end=22, depth=4) => '$a'
+            end: State(name='arg', start=20, end=22, depth=3) => '$a'
+        end: State(name='command', start=20, end=22, depth=2) => '$a'
+    end: State(name='statement', start=20, end=22, depth=1) => '$a'
+    start: State(name='statement', start=23, end=23, depth=1)
+        start: State(name='command', start=23, end=23, depth=2)
+            start: State(name='arg', start=23, end=23, depth=3)
+                start: State(name='$', start=23, end=23, depth=4)
+                end: State(name='$', start=23, end=25, depth=4) => '$1'
+            end: State(name='arg', start=23, end=25, depth=3) => '$1'
+        end: State(name='command', start=23, end=25, depth=2) => '$1'
+    end: State(name='statement', start=23, end=25, depth=1) => '$1'
+    start: State(name='statement', start=26, end=26, depth=1)
+        start: State(name='command', start=26, end=26, depth=2)
+            start: State(name='arg', start=26, end=26, depth=3)
+                start: State(name='$', start=26, end=26, depth=4)
+                end: State(name='$', start=26, end=29, depth=4) => '$a1'
+            end: State(name='arg', start=26, end=29, depth=3) => '$a1'
+        end: State(name='command', start=26, end=29, depth=2) => '$a1'
+    end: State(name='statement', start=26, end=29, depth=1) => '$a1'
+    start: State(name='statement', start=30, end=30, depth=1)
+        start: State(name='command', start=30, end=30, depth=2)
+            start: State(name='arg', start=30, end=30, depth=3)
+                start: State(name='$', start=30, end=30, depth=4)
+                end: State(name='$', start=30, end=33, depth=4) => '$_1'
+            end: State(name='arg', start=30, end=33, depth=3) => '$_1'
+        end: State(name='command', start=30, end=33, depth=2) => '$_1'
+    end: State(name='statement', start=30, end=33, depth=1) => '$_1'
+    start: State(name='statement', start=34, end=34, depth=1)
+        start: State(name='command', start=34, end=34, depth=2)
+            start: State(name='arg', start=34, end=34, depth=3)
+                start: State(name='$', start=34, end=34, depth=4)
+                end: State(name='$', start=34, end=38, depth=4) => '$a_1'
+            end: State(name='arg', start=34, end=38, depth=3) => '$a_1'
+        end: State(name='command', start=34, end=38, depth=2) => '$a_1'
+    end: State(name='statement', start=34, end=38, depth=1) => '$a_1'
+    start: State(name='statement', start=40, end=40, depth=1)
+        start: State(name='command', start=40, end=40, depth=2)
+            start: State(name='arg', start=40, end=40, depth=3)
+                start: State(name='${', start=40, end=40, depth=4)
+                end: State(name='${', start=40, end=44, depth=4) => '${a}'
+            end: State(name='arg', start=40, end=44, depth=3) => '${a}'
+        end: State(name='command', start=40, end=44, depth=2) => '${a}'
+    end: State(name='statement', start=40, end=44, depth=1) => '${a}'
+    start: State(name='statement', start=45, end=45, depth=1)
+        start: State(name='command', start=45, end=45, depth=2)
+            start: State(name='arg', start=45, end=45, depth=3)
+                start: State(name='${', start=45, end=45, depth=4)
+                end: State(name='${', start=45, end=49, depth=4) => '${1}'
+            end: State(name='arg', start=45, end=49, depth=3) => '${1}'
+        end: State(name='command', start=45, end=49, depth=2) => '${1}'
+    end: State(name='statement', start=45, end=49, depth=1) => '${1}'
+    start: State(name='statement', start=50, end=50, depth=1)
+        start: State(name='command', start=50, end=50, depth=2)
+            start: State(name='arg', start=50, end=50, depth=3)
+                start: State(name='${', start=50, end=50, depth=4)
+                end: State(name='${', start=50, end=55, depth=4) => '${a1}'
+            end: State(name='arg', start=50, end=55, depth=3) => '${a1}'
+        end: State(name='command', start=50, end=55, depth=2) => '${a1}'
+    end: State(name='statement', start=50, end=55, depth=1) => '${a1}'
+    start: State(name='statement', start=56, end=56, depth=1)
+        start: State(name='command', start=56, end=56, depth=2)
+            start: State(name='arg', start=56, end=56, depth=3)
+                start: State(name='${', start=56, end=56, depth=4)
+                end: State(name='${', start=56, end=61, depth=4) => '${_1}'
+            end: State(name='arg', start=56, end=61, depth=3) => '${_1}'
+        end: State(name='command', start=56, end=61, depth=2) => '${_1}'
+    end: State(name='statement', start=56, end=61, depth=1) => '${_1}'
+    start: State(name='statement', start=62, end=62, depth=1)
+        start: State(name='command', start=62, end=62, depth=2)
+            start: State(name='arg', start=62, end=62, depth=3)
+                start: State(name='${', start=62, end=62, depth=4)
+                end: State(name='${', start=62, end=68, depth=4) => '${a_1}'
+            end: State(name='arg', start=62, end=68, depth=3) => '${a_1}'
+        end: State(name='command', start=62, end=68, depth=2) => '${a_1}'
+    end: State(name='statement', start=62, end=68, depth=1) => '${a_1}'
+    start: State(name='statement', start=70, end=70, depth=1)
+        start: State(name='command', start=70, end=70, depth=2)
+            start: State(name='arg', start=70, end=70, depth=3)
+                start: State(name='${', start=70, end=70, depth=4)
+                    start: State(name='$', start=73, end=73, depth=5)
+                    end: State(name='$', start=73, end=75, depth=5) => '$b'
+                end: State(name='${', start=70, end=76, depth=4) => '${a$b}'
+            end: State(name='arg', start=70, end=76, depth=3) => '${a$b}'
+        end: State(name='command', start=70, end=76, depth=2) => '${a$b}'
+    end: State(name='statement', start=70, end=76, depth=1) => '${a$b}'
+    start: State(name='statement', start=77, end=77, depth=1)
+        start: State(name='command', start=77, end=77, depth=2)
+            start: State(name='arg', start=77, end=77, depth=3)
+                start: State(name='${', start=77, end=77, depth=4)
+                    start: State(name='${', start=80, end=80, depth=5)
+                    end: State(name='${', start=80, end=84, depth=5) => '${b}'
+                end: State(name='${', start=77, end=85, depth=4) => '${a${b}}'
+            end: State(name='arg', start=77, end=85, depth=3) => '${a${b}}'
+        end: State(name='command', start=77, end=85, depth=2) => '${a${b}}'
+    end: State(name='statement', start=77, end=85, depth=1) => '${a${b}}'
+    start: State(name='statement', start=87, end=87, depth=1)
+        start: State(name='command', start=87, end=87, depth=2)
+            start: State(name='arg', start=87, end=87, depth=3)
+                start: State(name='$', start=87, end=87, depth=4)
+                end: State(name='$', start=87, end=88, depth=4) => '$'
+            end: State(name='arg', start=87, end=88, depth=3) => '$'
+        end: State(name='command', start=87, end=88, depth=2) => '$'
+    end: State(name='statement', start=87, end=88, depth=1) => '$'
+    start: State(name='statement', start=89, end=89, depth=1)
+        start: State(name='command', start=89, end=89, depth=2)
+            start: State(name='arg', start=89, end=89, depth=3)
+                start: State(name='$', start=89, end=89, depth=4)
+                end: State(name='$', start=89, end=91, depth=4) => '$a'
+                start: State(name='$', start=91, end=91, depth=4)
+                end: State(name='$', start=91, end=92, depth=4) => '$'
+            end: State(name='arg', start=89, end=92, depth=3) => '$a$'
+        end: State(name='command', start=89, end=92, depth=2) => '$a$'
+    end: State(name='statement', start=89, end=92, depth=1) => '$a$'
+    start: State(name='statement', start=93, end=93, depth=1)
+        start: State(name='command', start=93, end=93, depth=2)
+            start: State(name='arg', start=93, end=93, depth=3)
+                start: State(name='${', start=93, end=93, depth=4)
+                end: State(name='${', start=93, end=96, depth=4) => '${}'
+            end: State(name='arg', start=93, end=96, depth=3) => '${}'
+        end: State(name='command', start=93, end=96, depth=2) => '${}'
+    end: State(name='statement', start=93, end=96, depth=1) => '${}'
+    start: State(name='statement', start=97, end=97, depth=1)
+        start: State(name='command', start=97, end=97, depth=2)
+            start: State(name='arg', start=97, end=97, depth=3)
+                start: State(name='${', start=97, end=97, depth=4)
+                    start: State(name='$', start=99, end=99, depth=5)
+                    end: State(name='$', start=99, end=100, depth=5) => '$'
+                end: State(name='${', start=97, end=101, depth=4) => '${$}'
+            end: State(name='arg', start=97, end=101, depth=3) => '${$}'
+        end: State(name='command', start=97, end=101, depth=2) => '${$}'
+    end: State(name='statement', start=97, end=101, depth=1) => '${$}'
+    start: State(name='statement', start=102, end=102, depth=1)
+        start: State(name='command', start=102, end=102, depth=2)
+            start: State(name='arg', start=102, end=102, depth=3)
+                start: State(name='${', start=102, end=102, depth=4)
+                    start: State(name='$', start=105, end=105, depth=5)
+                    end: State(name='$', start=105, end=106, depth=5) => '$'
+                end: State(name='${', start=102, end=107, depth=4) => '${a$}'
+            end: State(name='arg', start=102, end=107, depth=3) => '${a$}'
+        end: State(name='command', start=102, end=107, depth=2) => '${a$}'
+    end: State(name='statement', start=102, end=107, depth=1) => '${a$}'
+    start: State(name='statement', start=108, end=108, depth=1)
+        start: State(name='command', start=108, end=108, depth=2)
+            start: State(name='arg', start=108, end=108, depth=3)
+                start: State(name='${', start=108, end=108, depth=4)
+                end: State(name='${', start=108, end=112, depth=4) => '${a}'
+                start: State(name='$', start=112, end=112, depth=4)
+                end: State(name='$', start=112, end=113, depth=4) => '$'
+            end: State(name='arg', start=108, end=113, depth=3) => '${a}$'
+        end: State(name='command', start=108, end=113, depth=2) => '${a}$'
+    end: State(name='statement', start=108, end=113, depth=1) => '${a}$'
+    start: State(name='statement', start=115, end=115, depth=1)
+        start: State(name='command', start=115, end=115, depth=2)
+            start: State(name='arg', start=115, end=115, depth=3)
+                start: State(name='$', start=117, end=117, depth=4)
+                end: State(name='$', start=117, end=119, depth=4) => '$1'
+            end: State(name='arg', start=115, end=119, depth=3) => 'a_$1'
+        end: State(name='command', start=115, end=119, depth=2) => 'a_$1'
+    end: State(name='statement', start=115, end=119, depth=1) => 'a_$1'
+    start: State(name='statement', start=120, end=120, depth=1)
+        start: State(name='command', start=120, end=120, depth=2)
+            start: State(name='arg', start=120, end=120, depth=3)
+                start: State(name='$', start=122, end=122, depth=4)
+                end: State(name='$', start=122, end=126, depth=4) => '$t_1'
+            end: State(name='arg', start=120, end=126, depth=3) => 'a_$t_1'
+        end: State(name='command', start=120, end=126, depth=2) => 'a_$t_1'
+    end: State(name='statement', start=120, end=126, depth=1) => 'a_$t_1'
+    start: State(name='statement', start=128, end=128, depth=1)
+        start: State(name='command', start=128, end=128, depth=2)
+            start: State(name='arg', start=128, end=128, depth=3)
+                start: State(name='$', start=130, end=130, depth=4)
+                end: State(name='$', start=130, end=134, depth=4) => '$t_1'
+            end: State(name='arg', start=128, end=136, depth=3) => 'a_$t_1/x'
+        end: State(name='command', start=128, end=136, depth=2) => 'a_$t_1/x'
+    end: State(name='statement', start=128, end=136, depth=1) => 'a_$t_1/x'
+    start: State(name='statement', start=138, end=138, depth=1)
+        start: State(name='command', start=138, end=138, depth=2)
+            start: State(name='arg', start=138, end=138, depth=3)
+                start: State(name='$$', start=138, end=138, depth=4)
+                end: State(name='$$', start=138, end=140, depth=4) => '$$'
+            end: State(name='arg', start=138, end=140, depth=3) => '$$'
+        end: State(name='command', start=138, end=140, depth=2) => '$$'
+    end: State(name='statement', start=138, end=140, depth=1) => '$$'
+    start: State(name='statement', start=141, end=141, depth=1)
+        start: State(name='command', start=141, end=141, depth=2)
+            start: State(name='arg', start=141, end=141, depth=3)
+                start: State(name='$$', start=141, end=141, depth=4)
+                end: State(name='$$', start=141, end=143, depth=4) => '$?'
+            end: State(name='arg', start=141, end=143, depth=3) => '$?'
+        end: State(name='command', start=141, end=143, depth=2) => '$?'
+    end: State(name='statement', start=141, end=143, depth=1) => '$?'
+    start: State(name='statement', start=144, end=144, depth=1)
+        start: State(name='command', start=144, end=144, depth=2)
+            start: State(name='arg', start=144, end=144, depth=3)
+                start: State(name='$$', start=144, end=144, depth=4)
+                end: State(name='$$', start=144, end=146, depth=4) => '$*'
+            end: State(name='arg', start=144, end=146, depth=3) => '$*'
+        end: State(name='command', start=144, end=146, depth=2) => '$*'
+    end: State(name='statement', start=144, end=146, depth=1) => '$*'
+    start: State(name='statement', start=147, end=147, depth=1)
+        start: State(name='command', start=147, end=147, depth=2)
+            start: State(name='arg', start=147, end=147, depth=3)
+                start: State(name='$$', start=147, end=147, depth=4)
+                end: State(name='$$', start=147, end=149, depth=4) => '$@'
+            end: State(name='arg', start=147, end=149, depth=3) => '$@'
+        end: State(name='command', start=147, end=149, depth=2) => '$@'
+    end: State(name='statement', start=147, end=149, depth=1) => '$@'
+    start: State(name='statement', start=150, end=150, depth=1)
+        start: State(name='command', start=150, end=150, depth=2)
+            start: State(name='arg', start=150, end=150, depth=3)
+                start: State(name='$$', start=150, end=150, depth=4)
+                end: State(name='$$', start=150, end=152, depth=4) => '$!'
+            end: State(name='arg', start=150, end=152, depth=3) => '$!'
+        end: State(name='command', start=150, end=152, depth=2) => '$!'
+    end: State(name='statement', start=150, end=152, depth=1) => '$!'
+    start: State(name='statement', start=153, end=153, depth=1)
+        start: State(name='command', start=153, end=153, depth=2)
+            start: State(name='arg', start=153, end=153, depth=3)
+                start: State(name='$$', start=153, end=153, depth=4)
+                end: State(name='$$', start=153, end=155, depth=4) => '$#'
+            end: State(name='arg', start=153, end=155, depth=3) => '$#'
+        end: State(name='command', start=153, end=155, depth=2) => '$#'
+    end: State(name='statement', start=153, end=155, depth=1) => '$#'
+    start: State(name='statement', start=157, end=157, depth=1)
+        start: State(name='command', start=157, end=157, depth=2)
+            start: State(name='arg', start=157, end=157, depth=3)
+                start: State(name='${', start=157, end=157, depth=4)
+                end: State(name='${', start=157, end=165, depth=4) => '${a:1:1}'
+            end: State(name='arg', start=157, end=165, depth=3) => '${a:1:1}'
+        end: State(name='command', start=157, end=165, depth=2) => '${a:1:1}'
+    end: State(name='statement', start=157, end=165, depth=1) => '${a:1:1}'
+    start: State(name='statement', start=166, end=166, depth=1)
+        start: State(name='command', start=166, end=166, depth=2)
+            start: State(name='arg', start=166, end=166, depth=3)
+                start: State(name='${', start=166, end=166, depth=4)
+                end: State(name='${', start=166, end=171, depth=4) => '${#a}'
+            end: State(name='arg', start=166, end=171, depth=3) => '${#a}'
+        end: State(name='command', start=166, end=171, depth=2) => '${#a}'
+    end: State(name='statement', start=166, end=171, depth=1) => '${#a}'
+    start: State(name='statement', start=172, end=172, depth=1)
+        start: State(name='command', start=172, end=172, depth=2)
+            start: State(name='arg', start=172, end=172, depth=3)
+                start: State(name='${', start=172, end=172, depth=4)
+                end: State(name='${', start=172, end=177, depth=4) => '${a^}'
+            end: State(name='arg', start=172, end=177, depth=3) => '${a^}'
+            start: State(name='arg', start=178, end=178, depth=3)
+                start: State(name='${', start=178, end=178, depth=4)
+                end: State(name='${', start=178, end=184, depth=4) => '${a^^}'
+            end: State(name='arg', start=178, end=184, depth=3) => '${a^^}'
+            start: State(name='arg', start=185, end=185, depth=3)
+                start: State(name='${', start=185, end=185, depth=4)
+                end: State(name='${', start=185, end=190, depth=4) => '${a,}'
+            end: State(name='arg', start=185, end=190, depth=3) => '${a,}'
+            start: State(name='arg', start=191, end=191, depth=3)
+                start: State(name='${', start=191, end=191, depth=4)
+                end: State(name='${', start=191, end=197, depth=4) => '${a,,}'
+            end: State(name='arg', start=191, end=197, depth=3) => '${a,,}'
+        end: State(name='command', start=172, end=197, depth=2) => '${a^} ${a^^} ${a,} ${a,,}'
+    end: State(name='statement', start=172, end=197, depth=1) => '${a^} ${a^^} ${a,} ${a,,}'
+end: State(name='start', start=0, end=198, depth=0) => '#!/usr/bin/env bash\n$a\n$1\n$a1\n$_1\n$a_1\n\n...${a^^} ${a,} ${a,,}\n'

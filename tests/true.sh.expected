@@ -1,0 +1,8 @@
+start: State(name='start', start=0, end=0, depth=0)
+    start: State(name='statement', start=0, end=0, depth=1)
+        start: State(name='command', start=0, end=0, depth=2)
+            start: State(name='arg', start=0, end=0, depth=3)
+            end: State(name='arg', start=0, end=4, depth=3) => 'true'
+        end: State(name='command', start=0, end=4, depth=2) => 'true'
+    end: State(name='statement', start=0, end=4, depth=1) => 'true'
+end: State(name='start', start=0, end=5, depth=0) => 'true\n'

@@ -1,0 +1,14 @@
+start: State(name='start', start=0, end=0, depth=0)
+    start: State(name='statement', start=0, end=0, depth=1)
+        start: State(name='comment', start=0, end=0, depth=2)
+        end: State(name='comment', start=0, end=19, depth=2) => '#!/usr/bin/env bash'
+    end: State(name='statement', start=0, end=19, depth=1) => '#!/usr/bin/env bash'
+    start: State(name='statement', start=21, end=21, depth=1)
+        start: State(name='comment', start=21, end=21, depth=2)
+        end: State(name='comment', start=21, end=43, depth=2) => '# this is a comment #1'
+    end: State(name='statement', start=21, end=43, depth=1) => '# this is a comment #1'
+    start: State(name='statement', start=45, end=45, depth=1)
+        start: State(name='comment', start=45, end=45, depth=2)
+        end: State(name='comment', start=45, end=67, depth=2) => '# this is a comment #2'
+    end: State(name='statement', start=45, end=67, depth=1) => '# this is a comment #2'
+end: State(name='start', start=0, end=68, depth=0) => '#!/usr/bin/env bash\n\n# this is a comment...his is a comment #2\n'
