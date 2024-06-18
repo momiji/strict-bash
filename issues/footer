@@ -1,0 +1,4 @@
+
+# end test
+echo ERROR
+exit 1

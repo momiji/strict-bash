@@ -3,7 +3,6 @@ set -Eeuo pipefail
 cd "$(dirname "$0")"
 
 for i in tests/*.sh; do
-  echo
   echo -e "\e[33;1mRunning $i\e[m"
   python3 bs.py $i > $i.result ||:
   [ -f $i.expected ] || cp $i.result $i.expected

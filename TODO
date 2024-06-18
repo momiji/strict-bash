@@ -3,3 +3,8 @@ if else elif then fi do done case esac while for until
 << >> ...
 
 case ?
+
+
+
+http://hyperpolyglot.org/unix-shells
+https://mywiki.wooledge.org/BashFAQ/105
